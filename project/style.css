@@ -1,0 +1,192 @@
+/* ---------- 1. RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1e1e2f;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------- 2. NAVBAR (flex) ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;   /* logo left, links right */
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: #6c5ce7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #1e1e2f;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #6c5ce7;
+}
+
+/* ---------- 3. HERO (flex) ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 8%;
+  background: #f4f3ff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text h3 {
+  color: #6c5ce7;
+  margin-bottom: 10px;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;               /* makes the image round */
+  border: 6px solid #6c5ce7;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #1e1e2f;
+}
+
+/* ---------- 4. SECTIONS ---------- */
+.section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.light {
+  background: #f4f3ff;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------- 5. CARDS (flex + wrap) ---------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;                  /* cards move to next line on small screens */
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  flex: 1 1 200px;                  /* grow, shrink, minimum width */
+  max-width: 280px;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card p {
+  font-weight: 400;
+}
+
+/* ---------- 6. CONTACT FORM (flex) ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;           /* fields stacked top to bottom */
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6c5ce7;            /* purple border when typing */
+}
+
+.contact-form .btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* ---------- 7. FOOTER ---------- */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1e1e2f;
+  color: white;
+}
+
+/* ---------- 8. RESPONSIVE (mobile) ---------- */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;         /* stack logo and links */
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse; /* image on top, text below */
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}

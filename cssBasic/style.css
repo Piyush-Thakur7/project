@@ -1,0 +1,40 @@
+/* div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+div:hover{
+    color: red;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: orange;
+} */
+
+#special{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color:red
+}
+
+.para{
+    color: chocolate;
+    background-color: aqua;
+    font-size: 100px;
+}
+
+a[href="https://facebook.com"]{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+
+}
+
+/* colors */
+div{
+    width: 400px;
+    height: 400px;
+    /* background-color: rgb(33, 30, 178); */
+      /* background-color:rgba(40,20,255,1); */
+    background-color: #5f99ff;
+}
